@@ -64,7 +64,7 @@ export default async function TripDetailPage({ params }: PageProps) {
         {/* Hero */}
         <div className="relative h-[50vh] min-h-[400px] rounded-3xl overflow-hidden mb-12">
           <Image
-            src={trip.image_url}
+            src={trip.gallery_urls[0] || trip.image_url}
             alt={trip.title}
             fill
             className="object-cover"
