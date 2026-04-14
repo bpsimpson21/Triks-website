@@ -15,8 +15,8 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="relative h-[50vh] min-h-[350px] flex items-end">
         <Image
-          src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=1600&h=800&fit=crop"
-          alt="Trinity River valley"
+          src="/images/about-banner.jpg"
+          alt="Kayaker paddling whitewater on the Trinity River"
           fill
           className="object-cover"
           priority
@@ -65,10 +65,10 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="https://images.unsplash.com/photo-1502680390548-bdbac40ae4e7?w=600&h=750&fit=crop"
+                src="/images/founder.jpg"
                 alt="Gabriella Emerick"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>

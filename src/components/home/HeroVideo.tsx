@@ -1,19 +1,21 @@
+import Image from 'next/image';
 import Button from '@/components/ui/Button';
 
 export default function HeroVideo() {
   return (
     <section className="relative h-[90vh] min-h-[600px] flex items-center justify-center overflow-hidden">
-      {/* Video background */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        poster="/images/hero-poster.jpg"
-        className="absolute inset-0 w-full h-full object-cover"
-      >
-        <source src="/videos/hero.mp4" type="video/mp4" />
-      </video>
+      {/* Hero background image */}
+      <picture>
+        <source media="(max-width: 768px)" srcSet="/images/hero-portrait.jpg" />
+        <Image
+          src="/images/hero.jpg"
+          alt="Trinity River whitewater kayaking"
+          fill
+          className="object-cover"
+          priority
+          sizes="100vw"
+        />
+      </picture>
 
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/60" />

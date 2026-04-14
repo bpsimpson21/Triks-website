@@ -9,10 +9,10 @@ export default function MeetFounder() {
           {/* Photo */}
           <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src="https://images.unsplash.com/photo-1502680390548-bdbac40ae4e7?w=600&h=750&fit=crop"
+              src="/images/founder.jpg"
               alt="Gabriella Emerick — founder of T.R.I.K.S."
               fill
-              className="object-cover"
+              className="object-cover object-top"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
