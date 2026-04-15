@@ -28,8 +28,8 @@ export default function HeroVideo() {
         <p className="text-xl md:text-2xl text-white/90 mb-2 font-medium">
           Trinity River International Kayak School
         </p>
-        <p className="text-lg md:text-xl text-white/75 mb-10 max-w-2xl mx-auto">
-          Professional whitewater instruction on Northern California&apos;s stunning Trinity River
+        <p className="text-base md:text-xl text-white/75 mb-10 max-w-2xl mx-auto">
+          Explore the joy of rivers and whitewater kayaking on the Trinity River
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button href="/trips" variant="primary" size="lg">

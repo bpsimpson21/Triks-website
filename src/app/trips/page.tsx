@@ -68,6 +68,25 @@ const fallbackTrips: Trip[] = [
     is_featured: true,
     created_at: '',
   },
+  {
+    id: '4',
+    title: 'Private Instruction',
+    slug: 'private-instruction',
+    duration: 'Custom',
+    difficulty: 'All Levels',
+    age_range: null,
+    price: null,
+    description: '',
+    short_description:
+      'For the experienced or beginners, work with us to create a custom instruction itinerary for an individual or group.',
+    includes: [],
+    location: 'Trinity River',
+    image_url: '/images/adult-clinic-gallery.jpg',
+    gallery_urls: [],
+    video_url: null,
+    is_featured: true,
+    created_at: '',
+  },
 ];
 
 async function getTrips(): Promise<Trip[]> {
@@ -90,7 +109,7 @@ export default async function TripsPage() {
           title="Our Trips & Programs"
           subtitle="From youth camps to adult clinics — find the perfect Trinity River experience."
         />
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {trips.map((trip) => (
             <TripCard key={trip.id} trip={trip} />
           ))}

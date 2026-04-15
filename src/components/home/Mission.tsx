@@ -11,9 +11,9 @@ export default function Mission() {
               Mission
             </h3>
             <p className="text-stone-700 leading-relaxed text-lg">
-              To provide high-quality, safe, and educational whitewater kayaking instruction for
-              beginner to intermediate paddlers, fostering confidence, river stewardship, and
-              community.
+              To foster relationships with the river, through high-quality, safe, and educational
+              whitewater kayak instruction. To nurture confidence and positive mental health for
+              our paddlers.
             </p>
           </div>
           <div className="bg-white p-8 rounded-2xl shadow-sm">
@@ -21,9 +21,8 @@ export default function Mission() {
               Vision
             </h3>
             <p className="text-stone-700 leading-relaxed text-lg">
-              T.R.I.K.S. connects local communities from Redding to Eureka with the precious
-              resource that is the Trinity River. We aim to nurture future stewards of the river and
-              the outdoors through on- and off-water experiences.
+              T.R.I.K.S. cultivates river guardians and aids communities in harnessing the power
+              of connection with the river.
             </p>
           </div>
         </div>
