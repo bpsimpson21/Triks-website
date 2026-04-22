@@ -43,7 +43,7 @@ export default function TripCard({ trip }: TripCardProps) {
                 ${(trip.price / 100).toFixed(0)}
               </span>
             ) : (
-              <span className="text-sm text-stone-400">Pricing TBD</span>
+              <span className="text-sm font-medium text-emerald-700">Contact for quote</span>
             )}
             <span className="text-emerald-700 font-semibold text-sm group-hover:underline">
               View Details &rarr;

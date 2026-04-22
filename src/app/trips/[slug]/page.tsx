@@ -145,7 +145,7 @@ export default async function TripDetailPage({ params }: PageProps) {
                   <span className="text-base font-normal text-stone-500"> / person</span>
                 </p>
               ) : (
-                <p className="text-lg text-stone-500 mb-4">Pricing coming soon</p>
+                <p className="text-lg font-semibold text-emerald-700 mb-4">Contact for quote</p>
               )}
 
               {/* Available dates */}
