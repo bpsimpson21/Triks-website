@@ -26,7 +26,7 @@ export default function AboutPage() {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 w-full">
           <h1 className="text-4xl md:text-5xl font-bold text-white">About T.R.I.K.S.</h1>
           <p className="text-white/80 mt-2 text-lg max-w-2xl">
-            Trinity River International Kayak School — connecting communities with the river since day one.
+            Trinity River International Kayak School — connecting communities with the river.
           </p>
         </div>
       </section>
@@ -50,54 +50,40 @@ export default function AboutPage() {
               confidence, foster community, and cultivate a deep respect for the natural world.
             </p>
             <p>
-              Based in Willow Creek, CA, we operate on the Trinity River between Hayden Flat and
-              Cedar Flat — a stretch of Class I–II+ water surrounded by towering forests, clear
-              swimming holes, and National Forest Service campgrounds that feel a world away from
-              everyday life.
+              Based in Willow Creek, CA, we operate on the Trinity River — through its stretches
+              of class I–II+ whitewater surrounded by towering forests, clear swimming holes, and
+              National Forest Service campgrounds that feel a world away from everyday life.
             </p>
           </div>
         </div>
       </section>
 
       {/* Founder */}
-      <section className="py-20 bg-stone-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-xl">
+      <section className="py-12 bg-stone-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center">
+            <div className="md:col-span-2 relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg max-w-xs mx-auto md:max-w-none w-full">
               <Image
                 src="/images/founder.jpg"
                 alt="Gabriella Emerick"
                 fill
                 className="object-cover object-[center_30%]"
-                sizes="(max-width: 1024px) 100vw, 50vw"
+                sizes="(max-width: 768px) 80vw, 40vw"
               />
             </div>
-            <div>
-              <p className="text-emerald-700 font-semibold uppercase tracking-wide mb-2">
+            <div className="md:col-span-3">
+              <p className="text-emerald-700 font-semibold uppercase tracking-wide mb-2 text-sm">
                 Founder & Lead Instructor
               </p>
-              <h2 className="text-3xl md:text-4xl font-bold text-stone-900 mb-6">
+              <h2 className="text-2xl md:text-3xl font-bold text-stone-900 mb-4">
                 Gabriella Emerick
               </h2>
-              <div className="space-y-4 text-stone-700 leading-relaxed text-lg">
-                <p>
-                  Gabriella brings over 13 years of experience as a trip leader, guide, and outdoor
-                  educator. She has led paddlers on rivers across the American West — from
-                  California&apos;s Sierra Nevada to the desert canyons of Utah — and in Chile&apos;s
-                  Patagonia region.
-                </p>
-                <p>
-                  A local classroom teacher in Willow Creek, Gabriella is deeply rooted in the
-                  communities along the Trinity River. She understands firsthand the power of outdoor
-                  education to build confidence, foster connection, and inspire stewardship in young
-                  people and adults alike.
-                </p>
-                <p>
-                  Her teaching style is warm, patient, and safety-focused. Whether you&apos;re 10 or
-                  60, a first-timer or returning paddler, Gabriella meets you where you are and helps
-                  you grow on the water.
-                </p>
-              </div>
+              <p className="text-stone-700 leading-relaxed">
+                A local classroom teacher in Willow Creek, Gabriella is deeply rooted in the
+                communities along the Trinity River. She understands firsthand the power of outdoor
+                education to build confidence, foster connection, and inspire stewardship in young
+                people and adults alike.
+              </p>
             </div>
           </div>
         </div>

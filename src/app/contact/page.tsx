@@ -93,31 +93,7 @@ export default function ContactPage() {
                     (906) 360-5136
                   </a>
                 </li>
-                <li className="flex items-start gap-3">
-                  <svg className="w-5 h-5 text-emerald-600 mt-0.5 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                  </svg>
-                  <span>
-                    69 China Creek Rd.<br />
-                    Willow Creek, CA 95573
-                  </span>
-                </li>
               </ul>
-            </div>
-
-            {/* Map */}
-            <div className="rounded-2xl overflow-hidden border border-stone-200 h-80">
-              <iframe
-                title="T.R.I.K.S. Location — Willow Creek, CA"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48320.71095476853!2d-123.6714!3d40.9398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54d3f8e8b9b8b8b9%3A0x1234567890abcdef!2sWillow%20Creek%2C%20CA%2095573!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
             </div>
           </div>
         </div>

@@ -46,8 +46,6 @@ export default function Footer() {
                   (906) 360-5136
                 </a>
               </li>
-              <li>69 China Creek Rd.</li>
-              <li>Willow Creek, CA 95573</li>
             </ul>
           </div>
         </div>

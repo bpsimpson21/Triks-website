@@ -71,10 +71,10 @@ const fallbackTrips: Trip[] = [
     price: null,
     description: '',
     short_description:
-      'For the experienced or beginners, work with us to create a custom instruction itinerary for an individual or group.',
+      'At T.R.I.K.S., we understand that you might be interested in instruction that is customized to your learning style and abilities. Contact us to get a quote and get started on planning your 1–3 days of private instruction.',
     includes: [],
     location: 'Trinity River',
-    image_url: '/images/adult-clinic-gallery.jpg',
+    image_url: '/images/programs/kaare.jpg',
     gallery_urls: [],
     video_url: null,
     is_featured: true,
