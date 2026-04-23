@@ -18,15 +18,15 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-[#faf6ef]/95 backdrop-blur-sm border-b border-stone-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between py-4 md:py-5">
+        <div className="flex items-center justify-between py-3 md:py-4">
           <Link href="/" className="flex items-center" aria-label="Home">
             <Image
               src="/logo/triks-logo.svg"
               alt="Trinity River International Kayak School"
-              width={128}
-              height={128}
+              width={160}
+              height={160}
               priority
-              className="h-20 w-20 md:h-28 md:w-28 lg:h-32 lg:w-32 object-contain"
+              className="h-20 w-20 md:h-32 md:w-32 lg:h-40 lg:w-40 object-contain"
             />
           </Link>
 
@@ -36,14 +36,14 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-lg text-stone-900 hover:text-emerald-700 font-medium transition-colors"
+                className="text-lg md:text-xl text-stone-900 hover:text-emerald-700 font-medium transition-colors"
               >
                 {link.label}
               </Link>
             ))}
             <Link
               href="/trips"
-              className="bg-emerald-700 text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-800 transition-colors"
+              className="bg-emerald-700 text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-emerald-800 transition-colors"
             >
               Book Now
             </Link>
