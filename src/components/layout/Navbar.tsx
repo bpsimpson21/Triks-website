@@ -16,7 +16,7 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-stone-200">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#faf6ef]/95 backdrop-blur-sm border-b border-stone-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4 md:py-5">
           <Link href="/" className="flex items-center" aria-label="Home">
@@ -36,7 +36,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-lg text-stone-700 hover:text-emerald-700 font-medium transition-colors"
+                className="text-lg text-stone-900 hover:text-emerald-700 font-medium transition-colors"
               >
                 {link.label}
               </Link>
@@ -52,7 +52,7 @@ export default function Navbar() {
           {/* Mobile hamburger */}
           <button
             type="button"
-            className="md:hidden p-2 rounded-lg text-stone-700 hover:bg-stone-100"
+            className="md:hidden p-2 rounded-lg text-stone-900 hover:bg-stone-200"
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label="Toggle menu"
             aria-expanded={mobileOpen}
@@ -71,7 +71,7 @@ export default function Navbar() {
       {/* Mobile menu */}
       <div
         className={cn(
-          'md:hidden overflow-hidden transition-all duration-300 bg-white border-t border-stone-100',
+          'md:hidden overflow-hidden transition-all duration-300 bg-[#faf6ef] border-t border-stone-200',
           mobileOpen ? 'max-h-80' : 'max-h-0'
         )}
       >
@@ -80,7 +80,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="block text-stone-700 hover:text-emerald-700 font-medium py-2"
+              className="block text-stone-900 hover:text-emerald-700 font-medium py-2"
               onClick={() => setMobileOpen(false)}
             >
               {link.label}
