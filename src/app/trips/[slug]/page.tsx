@@ -4,21 +4,29 @@ import Button from '@/components/ui/Button';
 import TripGallery from '@/components/trips/TripGallery';
 import ItineraryTimeline from '@/components/trips/ItineraryTimeline';
 import { formatDateRange, spotsRemaining } from '@/lib/utils';
-import { fallbackTrips, getFallbackTripBySlug } from '@/lib/fallback-data';
+import { createServerClient } from '@/lib/supabase/server';
 import type { TripWithDetails } from '@/types';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
+export const dynamic = 'force-dynamic';
+
 async function getTrip(slug: string): Promise<TripWithDetails | null> {
-  try {
-    const { getTripBySlug } = await import('@/lib/supabase/queries');
-    const trip = await getTripBySlug(slug);
-    return trip ?? getFallbackTripBySlug(slug);
-  } catch {
-    return getFallbackTripBySlug(slug);
+  const supabase = createServerClient();
+  const { data, error } = await supabase
+    .from('trips')
+    .select('*, trip_dates(*), itinerary_days(*)')
+    .eq('slug', slug)
+    .single();
+
+  if (error) {
+    console.error(`[trip:${slug}] Supabase error:`, error);
+    return null;
   }
+  console.log(`[trip:${slug}] fetched:`, data?.title ?? 'null');
+  return data as TripWithDetails;
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
@@ -34,10 +42,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       images: [trip.image_url],
     },
   };
-}
-
-export async function generateStaticParams() {
-  return fallbackTrips.map((trip) => ({ slug: trip.slug }));
 }
 
 export default async function TripDetailPage({ params }: PageProps) {
